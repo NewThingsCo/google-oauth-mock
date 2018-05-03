@@ -2,6 +2,8 @@
 
 Simple REST API for simulating/mocking Google OAuth service.
 
+Published in [Docker Hub](https://hub.docker.com/r/newthings/google-oauth-mock/)
+
 ### Make file targets
 
 ```
