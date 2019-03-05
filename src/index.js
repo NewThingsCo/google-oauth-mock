@@ -26,22 +26,15 @@ app.post('/mock-token', (req, res) => {
 app.get('/mock-user', (req, res) => {
   console.log('mock-user')
   res.status(200).json({
-    id: '108442171748001887974',
-    emails: [
-      {
-        type: 'account',
-        value: 'test.user@newthings.co'
-      }
-    ],
-    displayName: 'Test User',
-    name: {
-      familyName: 'User',
-      givenName: 'Test'
-    },
-    image: {
-      url:
-        'https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg'
-    }
+    sub: '108442171748001887974',
+    email: 'test.user@newthings.co',
+    email_verified: true,
+    name: 'Test User',
+    given_name: 'User',
+    family_name: 'Test',
+    picture: 'https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg',
+    locale: 'en',
+    hd: 'newthings.co'
   })
 })
 
